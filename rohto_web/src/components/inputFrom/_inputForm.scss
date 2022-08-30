@@ -1,0 +1,32 @@
+@import '../../assets/scss/variables';
+
+
+.wrap-form {
+  .form-input {
+    padding: 0 1rem;
+    border: 1px solid $color_border_form;
+    height: 2.5rem;
+    border-radius: 4px;
+    .input-form {
+      width: 90%;
+      height: 2.3rem;
+      border: none;
+    }
+    .action {
+      width: 20%;
+    }
+  }
+  .form-preview {
+    height: 2.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .wrap-form {
+    .form-input {
+      padding: 0 0.8rem;
+      .action-close {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

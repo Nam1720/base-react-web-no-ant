@@ -1,0 +1,215 @@
+// import svn gotham
+
+@font-face {
+  font-family: 'svn-gotham-regular';
+  src: url("./../fonts/SVN-Gotham/SVN-Gotham Regular.otf") format("onpentype");
+}
+@font-face {
+  font-family: 'svn-gotham-black';
+  src: url("./../fonts/SVN-Gotham/SVN-Gotham Black.otf") format("onpentype");
+}
+@font-face {
+  font-family: 'svn-gotham-bold';
+  src: url("./../fonts/SVN-Gotham/SVN-Gotham Bold.otf") format("onpentype");
+}
+@font-face {
+  font-family: 'svn-gotham-light';
+  src: url("./../fonts/SVN-Gotham/SVN-Gotham Light.otf") format("onpentype");
+}
+
+
+
+// import sf pro
+@font-face {
+  font-family: 'sf-pro-display';
+  font-weight: 400;
+  src: url("./../fonts/sf-pro-text/SFProDisplay-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'sf-pro-display-medium';
+  src: url("./../fonts/sf-pro-text/SFProDisplay-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'sf-pro-display-semibold';
+  src: url("./../fonts/sf-pro-text/SFProDisplay-Semibold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'sf-pro-display-bold';
+  src: url("./../fonts/sf-pro-text/SFProDisplay-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'sf-pro-text';
+  font-weight: 400;
+  src: url("./../fonts/sf-pro-text/SFProText-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: 'sf-pro-text-medium';
+  src: url("./../fonts/sf-pro-text/SFProText-Medium.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'sf-pro-text-semibold';
+  src: url("./../fonts/sf-pro-text/SFProDisplay-Semibold.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'sf-pro-text-bold';
+  src: url("./../fonts/sf-pro-text/SFProText-Bold.ttf") format("opentype");
+}
+
+// font weight
+
+.font-weight-4 {
+  font-weight: 400;
+}
+
+.font-weight-5 {
+  font-weight: 500;
+}
+
+.font-weight-6 {
+  font-weight: 600;
+}
+
+.font-weight-7 {
+  font-weight: 700;
+}
+.font-weight-8 {
+  font-weight: 800;
+}
+
+// sf pro
+
+.font-sf-display-normal {
+  font-family: 'sf-pro-display';
+}
+.font-sf-display-medium {
+  font-family: 'sf-pro-display-medium';
+}
+.font-sf-text-medium {
+  font-family: 'sf-pro-text-medium';
+}
+.font-sf-display-semibold {
+  font-family: 'sf-pro-display-semibold';
+}
+.font-sf-text-semibold {
+  font-family: 'sf-pro-text-semibold';
+}
+.font-sf-display-bold {
+  font-family: 'sf-pro-display-bold';
+}
+.font-sf-text-bold {
+  font-family: 'sf-pro-text-bold';
+}
+
+// svn gotham
+.font-svg-gotham-bold{
+  font-family: 'svn-gotham-bold';
+}
+
+.font-svg-gotham-regular{
+  font-family: 'svn-gotham-regular';
+}
+.font-svg-gotham-light{
+  font-family: 'svn-gotham-light';
+}
+.font-svg-gotham-black{
+  font-family: 'svn-gotham-black';
+}
+
+// Font txt
+.font-primary {
+  font-family: $font_primary;
+}
+.font-secondary{
+  font-family: $font-secondary;
+}
+
+// Font-size
+.font-size-4 {
+  font-size: 0.25rem;
+}
+.font-size-6 {
+  font-size: 0.375rem;
+}
+.font-size-8 {
+  font-size: 0.5rem;
+}
+.font-size-9 {
+  font-size: 0.5625rem;
+}
+.font-size-10 {
+  font-size: 0.625rem;
+}
+.font-size-11 {
+  font-size: 0.6875rem;
+}
+.font-size-12 {
+  font-size: 0.75rem;
+}
+.font-size-13 {
+  font-size: 0.8125rem;
+}
+.font-size-14 {
+  font-size: 0.875rem;
+}
+.font-size-15 {
+  font-size: 0.9375rem;
+}
+.font-size-16 {
+  font-size: 1rem;
+}
+.font-size-17 {
+  font-size: 1.0625rem;
+}
+.font-size-18 {
+  font-size: 1.125rem;
+}
+.font-size-20 {
+  font-size: 1.25rem;
+}
+.font-size-22 {
+  font-size: 1.375rem;
+}
+.font-size-24 {
+  font-size: 1.5rem;
+}
+.font-size-26 {
+  font-size: 1.625rem;
+}
+.font-size-28 {
+  font-size: 1.75rem;
+}
+.font-size-30 {
+  font-size: 1.875rem;
+}
+.font-size-32 {
+  font-size: 2rem;
+}
+.font-size-34 {
+  font-size: 2.125rem;
+}
+.font-size-36 {
+  font-size: 2.25rem;
+}
+.font-size-40 {
+  font-size: 2.5rem;
+}
+.font-size-46 {
+  font-size: 2.875rem;
+}
+.font-size-50 {
+  font-size: 3.125rem;
+}
+.font-size-56 {
+  font-size: 3.5rem;
+}
+.font-size-64 {
+  font-size: 4rem;
+}
+.font-size-72 {
+  font-size: 4.5rem;
+}

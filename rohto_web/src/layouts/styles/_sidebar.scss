@@ -1,0 +1,234 @@
+@import './../../assets/scss/variables';
+
+.sidebar {
+  transition: width ease-out 200ms;
+  border-right: 1px solid $color_border;
+
+  &__head, &__footer, &__body {
+    padding: 0.75rem;
+  }
+
+  &__head, &__footer {
+    height: 4.5rem;
+    justify-content: center;
+  }
+
+  &__head {
+    border-bottom: 1px solid $color_border;
+
+    img {
+      width: 5rem;
+      height: auto;
+    }
+  }
+
+  .logo-close-sidebar {
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  &__footer {
+    border-top: 1px solid $color_border;
+
+    .user {
+      img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.625rem;
+      }
+    }
+
+    &:hover {
+      .drop-down {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .drop-down {
+      bottom: 100%;
+      left: 0;
+      padding: 0.75rem;
+      width: 100%;
+      box-shadow: 0px -5px 10px rgba($color_black, .10);
+      border-bottom: 2px solid $color_border;
+      transition: all 0.5s;
+
+      li {
+        padding: 0.8rem;
+        border-radius: 5px;
+
+        .title {
+          margin-left: 0.875rem;
+        }
+
+        &:hover, &:hover i {
+          //background: $color_bg_close;
+          color: $color_primary;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__body {
+    // overflow-y: auto;
+    height: calc(100vh - 9rem);
+  }
+
+  &__menus {
+
+    a, .section__name {
+      padding: 0.46rem 0.8125rem;
+    }
+
+    a {
+
+      &:hover {
+        //background: $primary_color;
+        //color: $color_light;
+      }
+    }
+
+    .section {
+      &__menu li, &__name {
+        margin-bottom: 0.75rem;
+      }
+
+      &__menu {
+        .item {
+          .menu-txt {
+            backface-visibility: hidden;
+            margin-left: 0.5rem;
+
+          }
+        }
+      }
+    }
+  }
+
+  &--close {
+    .sidebar {
+      &__menus {
+        a {
+          padding: 0.5rem 0.75rem;
+
+          &:hover {
+            //background: $color_bg_close;
+            //color: $primary_color;
+          }
+        }
+
+        .section__name {
+          display: none;
+        }
+
+        .menu-txt {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          background: $color_white;
+          z-index: 1;
+          width: max-content;
+          padding: 0.5rem;
+          font-size: 0.75rem;
+          box-shadow: 0px 2px 10px rgba($color_black, .15);
+          -webkit-box-shadow: 0px 2px 10px rgba($color_black, .15);
+          margin-left: 0.8rem;
+          border-radius: 2px;
+        }
+
+        a {
+          text-align: center;
+
+
+          &:hover {
+            .menu-txt {
+              display: block;
+              //color: $color_text_secondary;
+            }
+          }
+        }
+
+        i {
+          margin-right: 0;
+        }
+      }
+
+      &__footer {
+        text-align: center;
+        justify-content: center;
+
+        .user img {
+          margin-right: 0;
+        }
+
+        .collapse-sidebar {
+          position: absolute;
+          right: -8px;
+          //background: $color_light;
+        }
+      }
+    }
+  }
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.collapse-sidebar {
+  border: 1px solid $color_border;
+  border-radius: 2px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  padding: 8px 4px 8px 5px !important;
+}
+
+.sidebar-profile {
+  margin-top: -2.25rem;
+  width: 14.5rem;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 0px 2px 10px rgba($color_black, .15);
+  -webkit-box-shadow: 0px 2px 10px rgba($color_black, .15);
+  border-left: 1px solid #EAEAEF;
+  padding: 1rem 1.5rem;
+
+  &__info {
+    margin-top: 2rem;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &__nav {
+    .item {
+      margin-bottom: 1rem;
+
+
+      i {
+        margin-right: 0.875rem;
+        //color: $color_grey_text;
+      }
+
+      &:hover, &:focus {
+        a, i {
+          //color: $primary_color;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .active {
+      a, i {
+        //color: $primary_color;
+        font-weight: 600;
+      }
+    }
+  }
+}

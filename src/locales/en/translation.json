@@ -1,0 +1,12 @@
+{
+  "common": {
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "close": "Close",
+    "yes": "Yes",
+    "cancel": "Cancel",
+    "overview": "Overview"
+  }
+}
